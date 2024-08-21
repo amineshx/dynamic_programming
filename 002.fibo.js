@@ -13,3 +13,6 @@ console.log(fibo(8))    // 21
 console.log(fibo(9))    // 34
 console.log(fibo(7))    // 13
 console.log(fibo(50))   // 12586269025
+
+// time complexity = O(n)
+// space complexity = O(n)

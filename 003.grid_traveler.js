@@ -4,11 +4,11 @@ const gridtravler=(m,n)=>{
     return gridtravler(m-1,n)+ gridtravler(m,n-1)
 }
 
-console.log(gridtravler(1,1))
-console.log(gridtravler(2,3))
-console.log(gridtravler(3,2))
-console.log(gridtravler(3,3))
-console.log(gridtravler(18,18))
+console.log(gridtravler(1,1))   //1
+console.log(gridtravler(2,3))   //3
+console.log(gridtravler(3,2))   //3
+console.log(gridtravler(3,3))   //6
+console.log(gridtravler(18,18)) //2333606220
 
 // O(2^(m+n)) time
 // O(n+m) space

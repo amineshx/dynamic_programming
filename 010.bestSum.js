@@ -22,3 +22,6 @@ console.log(bestSum(8,[2,3,5]))     //[ 5, 3 ]
 console.log(bestSum(8,[1,4,5]))     //[ 4, 4 ]
 console.log(bestSum(100,[1,2,5,25]))//[25,25,25,25]
 
+// m = targetSum    n= array length
+// O(n*m^2) time
+// O(m^2) space

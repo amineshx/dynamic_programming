@@ -17,4 +17,7 @@ console.log(canConstract("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",
         ["e","ee","eee","eeee","eeeee","eeeeee"]
     )) // false
 
-    
+
+// m = target.length   n= array length
+// O(m*n^m) time
+// O(m^2) space

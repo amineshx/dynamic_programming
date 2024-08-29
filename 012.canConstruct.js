@@ -24,5 +24,5 @@ console.log(canConstract("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",
 
 
 // m = target.length   n= array length
-// O(m*n^m) time
+// O(n*m^2) time
 // O(m^2) space

@@ -1,12 +1,17 @@
-const canConstract=(tareget, wordbank)=>{
+const canConstract=(tareget, wordbank,memo={})=>{
     if (tareget==='') return true
+    if (tareget in memo ) return memo[tareget]
 
     for(word of wordbank){
         if(tareget.indexOf(word)===0){
             const suffix = tareget.slice(word.length)
-            if (canConstract(suffix,wordbank)) return true
+            if (canConstract(suffix,wordbank,memo)) {
+                memo[tareget]=true
+                return true
+            }
         }
     }
+    memo[tareget]=false
     return false
 }
 

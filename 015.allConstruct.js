@@ -67,3 +67,6 @@ console.log(allConstruct("eeeeeeeeeeeeeeeeeeeeeeef",
     )) // []
 
 
+// m = target.length   n= array length
+// O(n^m) time
+// O(m) space

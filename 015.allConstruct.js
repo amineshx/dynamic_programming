@@ -1,11 +1,16 @@
 const allConstruct=(target,wordBank)=>{
     if (target==='') return [[]]
+
+    const res=[]
     for (let word of wordBank){
         if(target.indexOf(word)==0){
             const suffix= target.slice(word.length)
             const suffixWays= allConstruct(suffix,wordBank)
+            const taregetWays= suffixWays.map(way=>[word,...way])
+            res.push(...taregetWays)
         }
     }
+    return res
 }
 
 

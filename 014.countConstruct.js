@@ -1,12 +1,15 @@
-const countConstruct=(target,words)=>{
+const countConstruct=(target,words, memo={})=>{
     if(target==='') return 1
+    if(target in memo) return memo[target]
+
     let res= 0
     for(let word of words){
         if(target.indexOf(word)===0){
-            const numWays=countConstruct(target.slice(word.length),words)
+            const numWays=countConstruct(target.slice(word.length),words,memo)
             res+=numWays
         }
     }
+    memo[target]=res
     return res
 }
 
